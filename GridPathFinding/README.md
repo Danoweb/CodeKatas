@@ -1,4 +1,4 @@
-# Grid PAthfinding Codekata By Dan Reed
+# Grid Pathfinding Codekata By Dan Reed
 
 The objective is to find the path of lowest cost when moving across a grid. For this
 challenge, you are provided a grid of integers where each integer represents the
