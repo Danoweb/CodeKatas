@@ -11,6 +11,22 @@ include "header.php";
 ?>
 <!-- Page Content -->
     <div class="container">
+        <?php
+            //IF WE HAVE AN ALERT DISPLAY IT, THEN REMOVE IT FROM SESSION TRACKING
+            if(isset($_SESSION['error_message']))
+            {
+                ?>
+                <div class="alert alert-danger alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong><?php echo $_SESSION['error_message']; ?></strong>
+                </div>
+                
+                <?php
+                //REMOVE FROM ERROR SESSION TRACKING
+                unset($_SESSION['error_message']);
+            }//END IF ISSET($_SESSION{ERROR_MESSAGE})
+        
+        ?>
         <form name="add_grid_form" id="add_grid_form" action="grid_add_handler.php" enctype="multipart/form-data" method="POST">
             <div class="row text-center">
                 <div class="col-sm-12 col-md-12 col-lg-12">
