@@ -36,6 +36,7 @@ include "header.php";
                     <p>&bull; Grid rows are a series of space (" ") separated integer (whole number) values.</p>
                     <p>&bull; All rows in a grid must be the same length (if omitted Zero values will be added)</p>
                     <p>&bull; Values can be negative or positive</p>
+                    <p>&bull; Invalid inputs will be converted to 0</p>
 
                     <div class="row">
                         <div class="col-sm-12 col-md-6 col-lg-6 form-group">
